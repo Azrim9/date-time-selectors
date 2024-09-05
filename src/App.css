@@ -1,0 +1,68 @@
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: radial-gradient(
+      75.77% 96.44% at 11.82% -50.13%,
+      rgba(0, 106, 245, 0.91) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      36.41% 27.84% at 49.95% 28.12%,
+      rgba(0, 108, 245, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      177.1% 109.37% at 121.63% 100%,
+      rgba(0, 108, 245, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #151920;
+  background-size: 200% 200%;
+  animation: moveGradient 15s ease infinite;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: inherit;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.to {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.from {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.difference {
+  text-align: center;
+  padding: 5px;
+}
