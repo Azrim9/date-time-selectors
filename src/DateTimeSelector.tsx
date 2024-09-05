@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-function DateTimeSelector({ typeOfSelector, state }) {
+function DateTimeSelector({ typeOfSelector, state } : any) {
   const now = new Date();
   const [, setDateTime] = state;
 
